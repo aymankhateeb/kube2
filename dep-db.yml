@@ -1,11 +1,11 @@
-apiVersion: app/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: postgres-deployment
   labels:
     app: demo-voting-app
 spec:
-  replica: 1
+  replicas: 1
   selector:
     matchLabels:
       name: postgres-pod
